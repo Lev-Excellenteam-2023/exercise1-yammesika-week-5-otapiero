@@ -5,7 +5,7 @@ def perfect_numbers():
     # if the sum is equal to the number return True else return False
     def is_perfect(num):
         # create a list of the divisors of the number
-        divisors = [i for i in range(2, int(num / 2) + 1,2) if num % i == 0]
+        divisors = [i for i in range(1, int(num / 2) + 1) if num % i == 0]
         # check if the sum of the divisors is equal to the number
         if sum(divisors) == num:
             return True
