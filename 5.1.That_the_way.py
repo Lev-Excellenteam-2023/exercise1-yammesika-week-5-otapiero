@@ -15,4 +15,8 @@ def fun(path):
     print(files)
 
     return files
-#fun("C:\\Users\\ouriel\\source\\repos\\otapiero\\levExcelents\\Python\\Notebooks-master\\Notebooks-master\\week05\\images")
+ def main():
+    fun("C:\\Users\\ouriel\\source\\repos\\otapiero\\levExcelents\\Python\\Notebooks-master\\Notebooks-master\\week05\\images")
+
+if __name__=="__main__":
+    main()
