@@ -5,9 +5,9 @@ def join(*lists, sep='-'):
     # create an empty list
     result = []
     # loop over the lists
-    for lst in lists:
+    for inner_list in lists:
         # loop over the items in the list
-        for item in lst:
+        for item in inner_list:
             # add the item to the result list
             result.append(item)
     # return the result list
