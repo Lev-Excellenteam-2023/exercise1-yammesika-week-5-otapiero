@@ -5,7 +5,7 @@ import os
 def fun(path):
     # get all files in the path
 
-    files = os.listdir(path)
+    files = get_files_in_folder(path)
 
     # filter the files who starts with "deep"
 
@@ -15,8 +15,14 @@ def fun(path):
     print(files)
 
     return files
+    
+     
+def get_files_in_folder(path):
+    return os.listdir(path)
+    
+    
  def main():
     fun("C:\\Users\\ouriel\\source\\repos\\otapiero\\levExcelents\\Python\\Notebooks-master\\Notebooks-master\\week05\\images")
-
+    
 if __name__=="__main__":
     main()
